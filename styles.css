@@ -1,0 +1,281 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+}
+/*Header styles*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+#logotext {
+  color: white;
+  margin-left: 175px;
+}
+
+header #logo {
+  margin-left: 1px;
+  margin-top: 6px;
+}
+
+#navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+#navbar li a {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-size: large;
+}
+
+#navbar button a {
+  padding: 12px;
+  background-color: rgb(98, 98, 232);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: -5px;
+  transition: 0.15s;
+}
+
+#navbar li a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+}
+
+#navbar button a:hover {
+  background-color: rgb(98, 98, 232);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: -moz-grab;
+}
+
+/*Main content Styles*/
+
+main {
+  background-image: url(img/mainbg.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+}
+
+#heading {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#main-content {
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+#main-content #main-text {
+  width: 50%;
+  font-size: larger;
+  font-weight: bolder;
+  color:black;
+  margin-left: 25px;
+  width: 500px;
+  padding: 75px;
+  border: 2px solid beige;
+  background-color: #dff9fb;
+  opacity: 80%;
+  border-radius: 25px;
+}
+
+#main-content #signup-form {
+  border: 5px solid black;
+  padding: 5px;
+  height: 450px;
+  margin-right: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #dff9fb;
+}
+
+#main-content #signup-form label,
+input {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 2px;
+}
+
+#main-content #signup-form input{
+  border: 2px solid black;
+}
+
+#main-content #signup-form button {
+  padding: 25px;
+  background-color: rgb(98, 98, 232);
+  color: white;
+  font-weight: bolder;
+  border-radius: 15px;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+/*Pricing style*/
+#Plans {
+  background-color: #dff9fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Plans h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+#Plans p {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: larger;
+}
+#Plans .pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Plans .pricing .plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pricing .plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.pricing .plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+.pricing .plan ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+#Plans .pricing .plan .features li {
+  margin: 8px;
+}
+#Plans .pricing .plan .features li .fas {
+  margin-right: 4px;
+}
+#Plans .pricing .plan .features li .fa-check-circle {
+  color: #6ab04c;
+}
+#Plans .pricing .plan .features li .fa-times-circle {
+  color: #eb4d4b;
+}
+
+.pricing .plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #6ab04c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pricing .plan-popular {
+  border: 2px solid #6ab04c;
+  position: relative;
+  transform: scale(1.08);
+}
+.pricing .plan-popular span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ab04c;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#Plans .pricing .plan:hover {
+  box-shadow: 10px 13px 79px -8px rgba(0, 0, 0, 0.37);
+}
+
+/*About us Styles*/
+
+#aboutus {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  background-color: beige;
+  color: rgb(70, 70, 113);
+  align-items: center;
+}
+
+#aboutus h1{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#aboutus p {
+  margin: 15px;
+  width: 600px;
+  text-align: center;
+  font-size: larger;
+}
+
+/*footer */
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li{
+  margin: 15px;
+}
